@@ -2,10 +2,11 @@
   width: 100%;
   max-width: 500px;
   min-width: 220px;
-  margin:  auto;
+  margin: auto;
 
   .wrapper-logo {
     cursor: pointer;
+
     &__img {
       width: 100%;
     }
@@ -33,8 +34,11 @@
       outline: none;
     }
 
-    &_element:hover,
-    &__text {
+    &_element:hover ~ &__text {
+      color: blue;
+    }
+
+    &_element:hover {
       border: 2px solid blue;
     }
   }
