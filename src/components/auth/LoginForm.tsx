@@ -20,9 +20,9 @@ const LoginForm = () => {
     window.open("https://www.etisalatdigital.ae/en/index.jsp");
   };
 
-  const handlePush = (e: any): void => {
+  const handleSubmit = (e: any): void => {
     setOnPush(true);
-    e.preventDefault()
+    e.preventDefault();
   };
 
   return (
@@ -57,7 +57,7 @@ const LoginForm = () => {
               />
             </div>
             <button
-              onClick={ handlePush }
+              onClick={ handleSubmit }
               className="login-form__btn"
             >sign in
             </button>
